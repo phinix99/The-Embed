@@ -27,7 +27,7 @@ export default function CTA() {
         
         <div className="w-full md:w-[400px] shrink-0 relative z-10">
           <a 
-            href="https://calendar.app.google/1Vr9M6WL1aPiyfhk6"
+            href="https://calendar.app.google/fonV4aoPSDFeuwfx7"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full border border-paper/20 bg-paper/5 backdrop-blur-md rounded-[2rem] p-10 text-paper hover:text-tan text-lg tracking-wide font-medium flex flex-col items-center justify-center min-h-[300px] shadow-inner relative group cursor-pointer hover:bg-paper/10 transition-all duration-500 hover:scale-[1.02] block"

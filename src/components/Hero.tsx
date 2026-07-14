@@ -21,7 +21,7 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
             <a 
-              href="https://calendar.app.google/1Vr9M6WL1aPiyfhk6" 
+              href="https://calendar.app.google/fonV4aoPSDFeuwfx7" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center text-sm tracking-wide font-semibold bg-ink text-paper px-8 py-4 rounded-full hover:bg-green hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
@@ -30,7 +30,7 @@ export default function Hero() {
             </a>
             <a 
               href="#process" 
-              className="inline-flex items-center gap-2 text-sm tracking-wide font-semibold text-ink hover:text-green transition-colors"
+              className="hidden items-center gap-2 text-sm tracking-wide font-semibold text-ink hover:text-green transition-colors"
             >
               <PlayCircle className="w-5 h-5" />
               How it works
