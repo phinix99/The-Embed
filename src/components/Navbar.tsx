@@ -1,18 +1,29 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <motion.header 
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-line"
+      className={`sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-line transition-all duration-300`}
     >
-      <div className="max-w-5xl mx-auto px-6 h-20 flex justify-between items-center">
-        <div className="flex flex-col leading-tight">
-          <span className="font-sans text-xs tracking-[0.2em] uppercase font-semibold text-ink/70">
+      <div className={`max-w-5xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}>
+        <div className="flex flex-col -space-y-1.5 justify-center">
+          <span className={`font-sans tracking-[0.2em] uppercase font-semibold text-ink/70 transition-all duration-300 ${isScrolled ? 'text-[10px]' : 'text-xs'}`}>
             The
           </span>
-          <span className="font-serif text-2xl tracking-tight italic font-bold text-ink leading-none">
+          <span className={`font-serif tracking-tight italic font-bold text-ink leading-none transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-4xl'}`}>
             Embed
           </span>
         </div>
