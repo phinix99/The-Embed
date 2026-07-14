@@ -18,12 +18,12 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       className={`sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-line transition-all duration-300`}
     >
-      <div className={`max-w-5xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}>
-        <div className="flex flex-col -space-y-1.5 justify-center">
-          <span className={`font-sans tracking-[0.2em] uppercase font-semibold text-ink/70 transition-all duration-300 ${isScrolled ? 'text-[10px]' : 'text-xs'}`}>
+      <div className={`max-w-5xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-28'}`}>
+        <div className="flex flex-col -space-y-2 justify-center">
+          <span className={`font-sans tracking-[0.2em] uppercase font-semibold text-ink/70 transition-all duration-300 ${isScrolled ? 'text-[11px]' : 'text-sm'}`}>
             The
           </span>
-          <span className={`font-serif tracking-tight italic font-bold text-ink leading-none transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-4xl'}`}>
+          <span className={`font-serif tracking-tight italic font-bold text-green-deep leading-none transition-all duration-300 ${isScrolled ? 'text-3xl' : 'text-5xl'}`}>
             Embed
           </span>
         </div>
